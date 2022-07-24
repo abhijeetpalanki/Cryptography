@@ -10,29 +10,6 @@ import {
 } from "@ant-design/icons";
 import icon from "../images/cryptocurrency.png";
 
-const MenuList = [
-  {
-    key: "/",
-    icon: <HomeOutlined />,
-    label: "Home",
-  },
-  {
-    key: "/cryptocurrencies",
-    icon: <FundOutlined />,
-    label: "Crytocurrencies",
-  },
-  {
-    key: "/exchanges",
-    icon: <MoneyCollectOutlined />,
-    label: "Exchanges",
-  },
-  {
-    key: "/news",
-    icon: <BulbOutlined />,
-    label: "News",
-  },
-];
-
 const Navbar = () => {
   return (
     <div className="nav-container">
@@ -47,8 +24,8 @@ const Navbar = () => {
         <Menu.Item icon={<HomeOutlined />} key="Home">
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.Item icon={<FundOutlined />} key="Crytocurrencies">
-          <Link to="/cryptocurrencies">Crytocurrencies</Link>
+        <Menu.Item icon={<FundOutlined />} key="cryptocurrencies">
+          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
         </Menu.Item>
         <Menu.Item icon={<MoneyCollectOutlined />} key="Exchanges">
           <Link to="/exchanges">Exchanges</Link>
